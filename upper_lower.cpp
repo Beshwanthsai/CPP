@@ -2,7 +2,7 @@
 using namespace std;
  int main()
  {
-    int ch;
+    char ch;
     cin>>ch;
     if(ch>='A'&& ch<='Z' )
     {
