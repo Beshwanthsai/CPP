@@ -21,5 +21,5 @@ int main()
     if(isKaprekar(n))
         cout<<n<<" is a Kaprekar number.";
     else
-        cout<<n<<" is not a Kaprekar number.";
+        cout<<n<<" is not a Kaprekar number yeahhhh.";
 }
