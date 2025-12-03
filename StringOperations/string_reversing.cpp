@@ -13,6 +13,6 @@ int main()
         cout<<"Palindrome"<<endl;
     }
     else{
-        cout<<"Not a plaindrome"<<endl;
+
     }
 }
