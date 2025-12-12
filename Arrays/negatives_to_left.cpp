@@ -13,17 +13,32 @@ int main()
     {
         cin>>a[i];
     }
-    int j = 0;
+    // int j = 0;
+    // for(int i=0;i<n;i++)
+    // {
+    //     if(a[i]<0)
+    //     {
+    //         if(i!=j)
+    //         {
+    //             swap(a[i],a[j]);
+    //         }
+    //         j++;
+    //     }
+    //     cout<<a[i]<<" ";
+    // }
+
     for(int i=0;i<n;i++)
     {
         if(a[i]<0)
         {
-            if(i!=j)
-            {
-                swap(a[i],a[j]);
-            }
-            j++;
+            cout<<a[i]<<" ";
         }
-        cout<<a[i]<<" ";
+    }
+    for(int i=0;i<n;i++)
+    {
+        if(a[i]>0)
+        {
+            cout<<a[i]<<" ";
+        }
     }
 }
