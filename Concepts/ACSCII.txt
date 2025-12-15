@@ -1,0 +1,22 @@
+Important ASCII Ranges 
+
+🔹 Uppercase Letters
+'A' to 'Z'  →  65 to 90
+
+🔹 Lowercase Letters
+'a' to 'z'  →  97 to 122
+
+🔹 Digits
+'0' to '9'  →  48 to 57
+
+🔹 Space
+' ' → 32
+
+Lowercase is always 32 more than the Uppercase
+Lowercase converting->
+str[i] = str[i] - 32;
+
+Uppercase converting->
+str[i] = str[i] + 32;
+
+
