@@ -9,8 +9,10 @@ int reverse(int n, int rev)
         return rev;
     }
     else{
-        rev=rev*10 + n%10;
-        return reverse(n/10, rev);
+        int digit=n%10;
+        rev=rev*10 + digit;
+        n=n/10;
+        return reverse(n, rev);
     }
 }
 int main()
