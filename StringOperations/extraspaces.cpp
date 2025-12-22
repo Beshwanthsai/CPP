@@ -15,7 +15,5 @@ int main()
             ss+=s[i];
         }
     }
-    cout<<ss<<endl;
-
-    return 0;
+    cout<<ss;
 }
