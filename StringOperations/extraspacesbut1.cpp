@@ -16,6 +16,6 @@ int main()
         }
     }
     cout<<ss<<endl;
-    
+
     return 0;
 }
