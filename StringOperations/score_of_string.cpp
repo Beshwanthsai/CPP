@@ -11,7 +11,7 @@ using namespace std;
 
 int main() {
     string s;
-    cin>>s;
+    getline(cin,s);
     int score = 0;
     for(int i=0;i<s.length()-1;i++)
     {
