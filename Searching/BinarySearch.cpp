@@ -29,7 +29,7 @@ int main()
         else if(target > arr[mid]){
             left = mid +1;
         }
+    }
     cout<<"element not found"<<endl;
     return 0;
-    }
 }
