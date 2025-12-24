@@ -1,4 +1,5 @@
 #include<iostream>
+#include<algorithm>
 
 using namespace std;
 
@@ -11,6 +12,7 @@ int main()
     {
         cin>>arr[i];
     }
+    sort(arr, arr+n);
     int target;
     cin>>target;
     int left = 0, right = n-1;
