@@ -8,7 +8,7 @@
 
 #include<iostream>
 #include<vector>
-#include<unordered_map>
+#include<unordered_set>
 
 using namespace std;
 
@@ -21,15 +21,15 @@ int main()
     {
         cin>>a[i];
     }
-    unordered_map<int,int>mp;
+    unordered_set<int> seen;
     for(int i=0;i<n;i++)
     {
-        mp[a[i]]++;
-        if(mp[a[i]]>1)
-        {
+       if(seen.count(a[i]))
+       {
             cout<<"true"<<endl;
             return 0;
-        }
+       }
+        seen.insert(a[i]);
     }
     cout<<"false"<<endl;
     return 0;
