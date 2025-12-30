@@ -1,9 +1,7 @@
-// finding disappearing numbers in an array 
 #include<iostream>
 #include<vector>
-#include<unordered_set>
-
 using namespace std;
+
 int main()
 {
     int n;
@@ -13,16 +11,17 @@ int main()
     {
         cin>>a[i];
     }
-    unordered_set<int>s;
+    vector<int> shuffled(2*n);
+    shuffled.reserve(2*n);
     for(int i=0;i<n;i++)
     {
-        s.insert(a[i]);
+        shuffled[2*i]=a[i];
+        shuffled[2*i+1]=a[i+n]; 
     }
-    for(int i=1;i<=n;i++)
+    for(int i=0;i<2*n;i++)
     {
-        if(s.count(i)==0)
-        {
-            cout<<i<<" ";
-        }
+        cout<<shuffled[i]<<" ";
     }
+    return 0;
+
 }
