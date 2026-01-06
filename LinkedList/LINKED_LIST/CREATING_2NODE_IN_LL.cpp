@@ -28,10 +28,14 @@ int main()
     first -> next = second;
     second -> data = 20;
     second-> next = NULL;
-    cout<<first->data<<endl;
-    cout<<first->next->data<<endl;
-    cout<<second->data<<endl;
-    cout<<second->next<<endl;
+   
+    Node* head =first;
+    Node* temp =head;
+    while(temp!=NULL)
+    {
+        cout<<temp->data<<endl;
+        temp = temp->next;
+    }
     return 0;
 
 }
