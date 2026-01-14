@@ -14,15 +14,15 @@ int main()
     }
     for(int i=0;i<n;i++)
     {
-        int max_ele = -1;
+        int max_element = -1;
         for(int j=i+1;j<n;j++)
         {
-            if(a[j]>max_ele)
+            if(a[j]>max_element)
             {
-                max_ele = a[j];
+                max_element = a[j];
             }
         }
-        cout<<max_ele<<" ";
+        cout<<max_element<<" ";
     }
     
 }
