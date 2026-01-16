@@ -19,7 +19,7 @@ int main()
         }
         else
         {
-            cout<<"Not Sortedd"<<endl;
+            cout<<"Not Sorted"<<endl;
             break;
         }   
     }
