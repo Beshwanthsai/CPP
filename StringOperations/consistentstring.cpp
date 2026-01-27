@@ -16,11 +16,11 @@ int main()
     {
         cin>>words[i];
     }
-    unordered_set<char> s(s.begin(),s.end());
+    unordered_set<char> ss(s.begin(),s.end());
     bool consistent=true;
     for(auto ch:words)
     {
-        if(s.find(ch)==s.end())
+        if(ss.find(ch)==ss.end())
         {
             consistent=false;
             break;
