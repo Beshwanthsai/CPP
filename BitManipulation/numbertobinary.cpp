@@ -15,3 +15,5 @@ int main()
     }
     cout<<"Number of 1's in binary representation: "<<count<<endl;
 }
+
+
