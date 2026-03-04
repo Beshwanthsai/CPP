@@ -13,5 +13,5 @@ int main(){
             yeah = false;
         } 
     }
-    cout<<yeah<<endl
+    cout<<yeah<<endl;
 }
