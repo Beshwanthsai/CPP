@@ -14,23 +14,15 @@ int main() {
 
     int freq[26] = {0};
 
-    // Count characters of first string
-    for (char c : s1) {
-        freq[c - 'a']++;
+   for(int i=0;i<s1.length();i++){
+        freq[s1[i]-'a']++;
+        freq[s2[i]-'a']--;
+   }
+   for(int it:freq){
+    if(it!=0){
+        cout<<"Not anagram"<<endl;
     }
-
-    // Subtract characters of second string
-    for (char c : s2) {
-        freq[c - 'a']--;
-    }
-
-    // Check if all frequencies are zero
-    for (int i = 0; i < 26; i++) {
-        if (freq[i] != 0) {
-            cout << "Not Anagram";
-            return 0;
-        }
-    }
+   }
 
     cout << "Anagram";
     return 0;
