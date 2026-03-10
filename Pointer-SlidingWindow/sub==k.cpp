@@ -16,7 +16,7 @@ int main(){
             left++;
         }
         if(sum==k){
-            for(int i=left;i<right;i++){
+            for(int i=left;i<=right;i++){
                 cout<<nums[i]<< " ";
             }
             cout<<endl;
