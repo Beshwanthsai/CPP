@@ -26,7 +26,7 @@ int main() {
 
     for(auto group : res) {
         for(string word : group)
-            cout << word << " ";
+            cout << word<<endl;
         cout << endl;
     }
 }
