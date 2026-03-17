@@ -6,14 +6,14 @@ int main()
 {
     string s;
     cin>>s;
-    int count=0;
+    int addre=0;
     for(int i=0;i<s.length();i++)
     {
         if(s[i]=='a'||s[i]=='A')
         {
-            count++;
+            addre++;
         }
     }
-    cout<<count<<endl;
+    cout<<addre<<endl;
     return 0;
 }
