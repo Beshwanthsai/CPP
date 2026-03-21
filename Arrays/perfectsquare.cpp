@@ -13,12 +13,16 @@ int main(){
         cin>>a[i];
         sum+=a[i];
     }
-    long long root = sqrt(sum);
-    if(root*root==sum){
-        cout<<"yes"<<endl;
+    int left = 0, right = sum;
+    while (left<=right)
+    {
+        long long mid = left+(right-left)/2;
+        long long sq = mid*mid;
+        if(sq == sum){
+            cout<<"YEs"<<endl;
+        }
+        else if(sq<mid) left = mid+1;
+        else right = mid - 1;
     }
-    else{
-        cout<<"No"<<endl;
-    }
-    return 0;
+    
 }
