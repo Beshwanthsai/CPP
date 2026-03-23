@@ -8,3 +8,5 @@ int main(){
    int *ptr = arr+2;
    cout<<*ptr<<endl;
 }
+
+// doubt chudali next after completion 
