@@ -12,7 +12,6 @@ int main(){
         cin>>a[i];
     }
     stack<int> st;
-    // int ans = -1;
     for(int i=n-1;i>=0;i--){
         while (!st.empty() && st.top()<=a[i])
         {
@@ -26,3 +25,4 @@ int main(){
     for(int i=0;i<n;i++)
     cout<<a[i]<<endl;
 }
+// 4 5 2 10
