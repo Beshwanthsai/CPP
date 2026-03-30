@@ -25,4 +25,3 @@ int main(){
     for(int i=0;i<n;i++)
     cout<<a[i]<<endl;
 }
-// 4 5 2 10
